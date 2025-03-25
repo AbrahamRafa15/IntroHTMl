@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="scripts/codigo.js">
+
+    </script>
 </head>
 <body>
     <p id="intro"> Un párrafo </p>
@@ -19,18 +22,32 @@
     Esto es un <br> break. Lo de abajo es una línea horizontal
     <hr>
 
+    <img id="myimage" onclick="changeImage('myimage');" src="imágenes/daredevil.jpg">
+
+    <h1 id="anyId1" onclick="increaseText('anyId1')">Click on this text!</h1>
+    <h1 id="anyId2" onclick="increaseText('anyId2')">Click on this text!</h1>
+
+
+    <input type="text" id="anyId3" onchange="upperCase('anyId3');">
+
+    <div onmouseover="eventMouseOver(this)"
+        onmouseout="eventMouseOut(this)">
+        Mouse Over Me        
+    </div>
+
+    <p>Please input a number between 5 and 10:</p>
+    <input id="demo" type="text">
+    <button type="button" onclick="myFunction()">Test input</button>
+    <p id="mess"></p>
+
     <table>
         <tr>
-            <th>Nombre</th>
-            <th>Edad</th>
+            <td id="id1">1</td>
+            <td><input type="button" value="Renglon 1" onclick="changeText('id1');"></td>
         </tr>
         <tr>
-            <td>Jose</td>
-            <td>55</td>
-        </tr>
-        <tr>
-            <td>Luis</td>
-            <td>48</td>
+            <td id="id2">1</td>
+            <td><input type="button" value="Renglon 2" onclick="changeText('id2');"></td>
         </tr>
     </table>
 
