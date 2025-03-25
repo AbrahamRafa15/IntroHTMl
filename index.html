@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="intro"> Un párrafo </p>
+        Otro párrafo
+    
+    <h1>
+        Título grandote
+    </h1>
+    <h3>Título intermedio</h3>
+    <h6>Título pequeño</h6>
+    <span>Esto es un span</span>
+    <div>Esto es un div</div>
+    Esto es un <br> break. Lo de abajo es una línea horizontal
+    <hr>
+
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Jose</td>
+            <td>55</td>
+        </tr>
+        <tr>
+            <td>Luis</td>
+            <td>48</td>
+        </tr>
+    </table>
+
+    <ol>
+        <li>Elemento A</li>
+        <li>Elemento B</li>
+        <li>Elemento C</li>
+    </ol>
+
+    <ul>
+        <li>Elemento A</li>
+        <li>Elemento B</li>
+        <li>Elemento C</li>
+    </ul>
+
+    <a href="https://www.google.com" target="_blank">Vinculo</a>
+    <br>
+    <a href="https://www.google.com" target="_self">Vinculo</a>
+    <br>
+    <a href="mailto:amart348@itam.mx:">Correo</a>
+    <br>
+    <img src="imágenes/2025-Formula1-Ferrari-SF-25-001-1600.jpg" alt="foto" height="400">
+
+    <form action="otra.html" method="get">
+        <label for="Nombre">Ingresa tu nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"> <br>
+
+        <p>Selecciona un tipo</p>
+        <input type="radio" id="tipo1" name="tipo1" value="tipo1">
+        <label for="tipo1"> Tipo 1</label>
+        <input type="radio" id="tip2" name="tipo2" value="tipo2">
+        <label for="tipo2"> Tipo 2</label>
+        <input type="radio" id="tipo3" name="tipo3" value="tipo3">
+        <label for="tipo3"> Tipo 3</label>
+        <br>
+
+        <label for="seleccion">Selecciona un tipo</label>
+        <select id="seleccion" name="seleccion">
+            <option value="opcion 1">Opcion 1</option>
+            <option value="opcion 2" selected>Opcion 2</option>
+            <option value="opcion 3">Opcion 3</option>
+        </select>
+
+        <input type="checkbox" id="caja" name="caja" checked><br>
+        <label for="caja">Esta es una opcion</label><br>
+        
+        <label for="texto_largo">Escribe algo:</label><br>
+        <textarea name="texto_largo" id="texto_largo" rows="10" cols="30">Este es un mensaje largo</textarea><br>
+
+        <input type="hidden" name="oculto" value="valor oculto">
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        <input type="button" value="Genérico">
+    </form>
+    <script>    
+        document.write("Cualquier cosa")
+        document.write("<input type='button' value='Genérico2'>")
+    </script>
+
+</body>
+</html>
