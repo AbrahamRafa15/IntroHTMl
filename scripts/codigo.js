@@ -1,3 +1,18 @@
+function mensaje(texto) {
+    alert(texto);
+}
+
+interval_id = setInterval(mensaje, 2000, "Hola de intervalo");
+timeout_id = setTimeout(mensaje, 5000, "Hola desde Timeout");
+
+function cancelarTimeout(){
+    clearTimeout(timeout_id);
+}
+
+function cancelarInterval() {
+    clearInterval(interval_id);
+}
+
 function changeText(elementId) {
     var element = document.getElementById(elementId);
     element.innerHTML="12345678910";
@@ -43,3 +58,4 @@ function eventMouseOver(obj) {
 function eventMouseOut(obj){
     obj.innerHTML="Mouse over me";
 }
+
