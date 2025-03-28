@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vehiculo</title>
+</head>
+<body>
+    <h1>Sistema de Cotización de Seguros de Auto</h1>
+    <h3>Datos personales: </h3>
+    <script>
+        const todosLosParametros = window.location.search;
+        parametros = new URLSearchParams(todosLosParametros);
+        if (parametros.get("genero") === "Masculino")
+            document.writeln("Estimado Sr. " + parametros.get("nombre") + " " + parametros.get("Apellidos") + "<br>");
+        else
+            document.writeln("Estimada Sra. " + parametros.get("nombre")  + " " + parametros.get("Apellidos") + "<br>");
+        document.writeln("Género: " + parametros.get("genero") + "<br>")
+        document.writeln("Edad: " + parametros.get("edad") + "<br>");
+        document.writeln("Estado: " + parametros.get("seleccion") + "<br>")
+
+    </script>
+    
+
+</body>
+</html>
